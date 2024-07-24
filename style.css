@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(90deg, black, rgb(75, 5, 5));
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+nav a{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 1;
+    color: red;
+    transition: 0.5s;
+    margin-left: 100px;
+}
+
+nav a:hover{
+    color: aliceblue;
+    border-bottom: 1px solid red;
+}
+
+.loginbtn{
+    border: 2px solid red;
+    background-color: black;
+    color: aliceblue;
+    font-size: 15px;
+    transition: 0.5s ease-in-out;
+    font-weight: 1;
+    letter-spacing: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.loginbtn:hover{
+    background-color: red;
+    border: 2px solid black;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.banner{
+    width: 100%;
+    background-image: url(airtel_banner.jpg);
+    height: 400px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.update{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+}
+
+.update h1{
+    color: black;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 1;
+    text-shadow: 0px 8px 13px rgb(0, 0, 0, 0.5);
+}
+
+.update div{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.update div input{
+    padding: 10px;
+    width: 25%;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.update div input::placeholder{
+    font-style: italic;
+}
+
+.update div input:focus{
+    border: 1px solid red;
+}
+
+.update div button{
+    width: 8%;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 1;
+    letter-spacing: 0.5px;
+    font-family: cursive;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: aliceblue;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.update div button:hover{
+    background-color: rgb(0, 0, 0, 0.7);
+    box-shadow: 0px 8px 13px rgb(0, 0, 0, 0.5);
+}
+
+footer{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(90deg, black, rgb(75, 5, 5));
+}
+
+footer p{
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: 1;
+    color: aliceblue;
+    letter-spacing: 0.3px;
+}
+
+footer div{
+    /* width: 30%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: 0.7s ease-in-out;
+}
+
+footer div img:hover{
+    transform: scale(1.5);
+    filter: grayscale(1.5);
+}
+
+
+
+
+
+@media(max-width:450px){
+    body{
+        width: 100%;
+        background-color: whitesmoke;
+        overflow-x: hidden;
+    }
+    
+    header{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        background: linear-gradient(90deg, black, rgb(75, 5, 5));
+        position: fixed;
+        z-index: 10;
+        top: 0;
+
+    }
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 60px;
+        padding: 50px 20px;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        width: 70%;
+        background: linear-gradient(90deg, black, black, black);
+        opacity: 0;
+        transition: 1.2s;
+        z-index: 10;
+        height: 100vh;
+    }
+    
+    nav a{
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 1;
+        color: red;
+        transition: 0.5s;
+        margin-left: 0;
+    }
+    
+    nav a:hover{
+        color: aliceblue;
+        border-bottom: 1px solid red;
+    }
+    
+    .loginbtn{
+        border: 2px solid red;
+        background-color: black;
+        color: aliceblue;
+        font-size: 25px;
+        transition: 0.5s ease-in-out;
+        font-weight: 1;
+        letter-spacing: 1px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .loginbtn:hover{
+        background-color: aliceblue;
+        border: 2px solid red;
+        color: black;
+    }
+
+    .menu{
+        width: 30px;
+        height: 30px;
+        background-image: url(menu.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        transition: 0.2s;
+        border: none;
+        background-color: transparent;
+    }
+
+    .curtain{
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(0, 0, 0, 0.4);
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: 5;
+    }
+    
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+    
+    .banner{
+        width: 100%;
+        background-image: url(airtel_banner.jpg);
+        height: 400px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+    }
+    
+    .update{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        gap: 20px;
+    }
+    
+    .update h1{
+        color: black;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 1;
+        text-shadow: 0px 8px 13px rgb(0, 0, 0, 0.5);
+    }
+    
+    .update div{
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .update div input{
+        padding: 10px 15px;
+        width: 80%;
+        border: 0.5px solid black;
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255, 0.3);
+        outline: none;
+    }
+    
+    .update div input::placeholder{
+        font-style: italic;
+    }
+    
+    .update div input:focus{
+        border: 1px solid red;
+    }
+    
+    .update div button{
+        width: 80%;
+        padding: 10px 15px;
+        font-size: 15px;
+        font-weight: 1;
+        letter-spacing: 0.5px;
+        font-family: cursive;
+        border: none;
+        border-radius: 5px;
+        background-color: red;
+        color: aliceblue;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .update div button:hover{
+        background-color: rgb(0, 0, 0, 0.7);
+        box-shadow: 0px 8px 13px rgb(0, 0, 0, 0.5);
+    }
+    
+    footer{
+        width: 100%;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        gap: 20px;
+        background: linear-gradient(90deg, black, rgb(75, 5, 5));
+    }
+    
+    footer p{
+        font-size: 20px;
+        font-family: cursive;
+        font-weight: 1;
+        color: aliceblue;
+        letter-spacing: 0.3px;
+    }
+    
+    footer div{
+        /* width: 30%; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transition: 0.7s ease-in-out;
+    }
+    
+    
+    footer div img:hover{
+        transform: scale(1.5);
+        filter: grayscale(1.5);
+    }
+
+    footer div img{
+        height: 35px;
+    }
+
+    .show_nav{
+        left: 0;
+        opacity: 1;
+    }
+    
+    .change_menu_icon{
+        background-image: url(close.png);
+    }
+}
